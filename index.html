@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Homepage | Company Name</title>
+
+		<link
+			rel="stylesheet"
+			href="./assets/static/fonts/fontawesome-free-6.0.0-web/css/all.css"
+		/>
+		<link rel="stylesheet" href="./assets/static/css/style.css" />
+		<link rel="stylesheet" href="./assets/static/css/header.css" />
+		<link rel="stylesheet" href="./assets/static/css/home.css" />
+	</head>
+	<body>
+		<header>
+			<div class="company-logo__div">
+				<a href="index.html" class="link img__link company-logo__link"
+					><img
+						src="./assets/images/google-icon.png"
+						alt="Company Logo"
+						class="company-logo"
+				/></a>
+			</div>
+
+			<div class="nav-icon__div closed" id="menu-btn">
+				<i class="icon menu-icon fas fa-bars" id="open-icon"></i>
+				<i class="icon menu-icon fas fa-xmark" id="close-icon"></i>
+			</div>
+
+			<nav class="nav-bar">
+				<ul class="nav-list">
+					<li class="list-item">
+						<a href="index.html" class="nav-link link" id="home"
+							>Home</a
+						>
+					</li>
+
+					<li class="list-item">
+						<a
+							href="./pages/about-us.html"
+							class="nav-link link"
+							id="about-us"
+							>About us</a
+						>
+					</li>
+
+					<li class="list-item">
+						<a
+							href="./pages/contact-us.html"
+							class="nav-link link"
+							id="contact-us"
+							>Contact us</a
+						>
+					</li>
+
+					<li class="list-item">
+						<a
+							href="./pages/settings.html"
+							class="nav-link link"
+							id="settings"
+							>Settings</a
+						>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="login-user__div">
+				<button class="btn funds-btn" id="deposit-btn">
+					<i class="icon fas fa-download"></i>
+					Deposit
+				</button>
+				<button class="btn funds-btn" id="withdraw-btn">
+					<i class="icon fas fa-upload"></i>
+					Withdraw
+				</button>
+
+				<p class="users-name">Robert Fox</p>
+
+				<a href="./pages/settings.html" class="link user-avatar__div">
+					<img
+						src="./assets/images/google-icon.png"
+						alt="Robert Fox"
+						class="avatar"
+					/>
+					<div class="active-identifier"></div>
+				</a>
+			</div>
+		</header>
+		<main id="home__main">
+			<section class="section" id="acct-info">
+				<div class="balance__div">
+					<div class="current-bal">
+						<h2 class="heading">Current Balance</h2>
+						<p class="value">USD 60,479.58</p>
+
+						<span class="percentage-change">
+							<i class="icon fas fa-arrow-up-long"></i>
+							2.89%
+						</span>
+					</div>
+
+					<div class="monthly-profit">
+						<h3 class="heading">Monthly Profit</h3>
+						<p class="value">USD 60,479.58</p>
+
+						<span class="percentage-change"> + 20% </span>
+					</div>
+				</div>
+
+				<hr />
+
+				<div class="investment-progress chart">
+					<iframe
+						style="
+							aspect-ratio: 1200 / 630;
+							width: 100%;
+							height: fit-content;
+						"
+						src="https://www.coindesk.com/embedded-chart/hkG8nBghrtkBf"
+						width="100%"
+						frameborder="0"
+						scrolling="no"
+					></iframe>
+
+					<!-- Go to https://www.tradingview.com/widget/symbol-overview/# if you want to customize it -->
+					<!-- TradingView Widget BEGIN -->
+					<!-- <div class="tradingview-widget-container">
+						<div class="tradingview-widget-container__widget"></div>
+						<div class="tradingview-widget-copyright">
+							<a
+								href="https://www.tradingview.com/symbols/BTCUSD/?exchange=INDEX"
+								rel="noopener"
+								target="_blank"
+								><span class="blue-text">Bitcoin price</span></a
+							>
+							by TradingView
+						</div>
+						<script
+							type="text/javascript"
+							src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+							async
+						>
+							  {
+							  "symbols": [
+							    [
+							      "BTC",
+							      "INDEX:BTCUSD|1D"
+							    ]
+							  ],
+							  "chartOnly": true,
+							  "width": "100%",
+							  "height": "100%",
+							  "locale": "en",
+							  "colorTheme": "light",
+							  "autosize": true,
+							  "showVolume": false,
+							  "showMA": false,
+							  "hideDateRanges": false,
+							  "hideMarketStatus": false,
+							  "hideSymbolLogo": true,
+							  "scalePosition": "right",
+							  "scaleMode": "Normal",
+							  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+							  "fontSize": "10",
+							  "noTimeScale": false,
+							  "valuesTracking": "1",
+							  "changeMode": "price-and-percent",
+							  "chartType": "area",
+							  "gridLineColor": "rgba(66, 66, 66, 0.8)",
+							  "backgroundColor": "rgba(255, 255, 255, 0)",
+							  "lineColor": "rgba(103, 58, 183, 1)",
+							  "topColor": "rgba(103, 58, 183, 0.3)",
+							  "bottomColor": "rgba(41, 98, 255, 0)",
+							  "lineWidth": 3
+							}
+						</script>
+					</div> -->
+					<!-- TradingView Widget END -->
+				</div>
+			</section>
+
+			<section class="section" id="transactions">
+				<h3 class="tertiary-heading">Transactions</h3>
+
+				<ul class="transaction-list">
+					<li class="list-item transaction">
+						<span class="token">
+							<img
+								src="./assets/images/green-dollar-sign.png"
+								alt=""
+								class="token-img"
+								height="80%"
+							/>
+							<span class="token-name">USD</span>
+						</span>
+
+						<span class="transaction-type">
+							<span class="type-text">recieve</span>
+							<i class="icon receive-icon fas fa-arrow-down"></i>
+						</span>
+
+						<span class="transaction-value"> $987.99 </span>
+					</li>
+					<li class="list-item transaction">
+						<span class="token">
+							<img
+								src="./assets/images/green-dollar-sign.png"
+								alt=""
+								class="token-img"
+								height="80%"
+							/>
+							<span class="token-name">USD</span>
+						</span>
+
+						<span class="transaction-type">
+							<span class="type-text">send</span>
+							<i class="icon send-icon fas fa-arrow-up"></i>
+						</span>
+
+						<span class="transaction-value"> $987.99 </span>
+					</li>
+				</ul>
+			</section>
+
+			<section class="section" id="exchange">
+				<div class="container">
+					<h3 class="tertiary-heading">Exchange</h3>
+
+					<button class="refresh-btn btn">
+						<i class="icon fas fa-retweet"></i>
+					</button>
+
+					<div class="exchange-route">
+						<span class="from"
+							>1<span class="currency">BTC</span></span
+						>
+						<i class="icon fas fa-arrow-right"></i>
+
+						<span class="to"
+							>23,821.23<span class="currency">USD</span></span
+						>
+					</div>
+
+					<form action="#" class="form exchange-form">
+						<div class="input__div">
+							<input
+								type="number"
+								name="get"
+								id="get"
+								class="input-ele"
+								placeholder="Get"
+							/>
+							<label for="get">Get</label>
+
+							<img
+								src="./assets/images/green-dollar-sign.png"
+								class="exchange-currency__img"
+							/>
+						</div>
+
+						<div class="input__div">
+							<input
+								type="number"
+								name="pay"
+								id="pay"
+								class="input-ele"
+								placeholder="Pay"
+							/>
+							<label for="pay">Pay</label>
+
+							<img
+								src="./assets/images/green-dollar-sign.png"
+								class="exchange-currency__img"
+							/>
+						</div>
+
+						<div class="input__div submit__div">
+							<input
+								type="submit"
+								value="Exchange"
+								class="btn submit-btn"
+							/>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="section" id="overall-growth">
+				<h3 class="tertiary-heading">Overall Growth</h3>
+
+				<div class="chart overall-growth">
+					<!-- <iframe
+						style="
+							aspect-ratio: 1200 / 630;
+							width: 100%;
+							height: fit-content;
+						"
+						src="https://www.coindesk.com/embedded-chart/hkG8nBghrtkBf"
+						width="100%"
+						frameborder="0"
+						scrolling="no"
+					></iframe> -->
+
+					<!-- Go to https://www.tradingview.com/widget/symbol-overview/# if you want to customize it -->
+					<!-- TradingView Widget BEGIN -->
+					<div class="tradingview-widget-container">
+						<div class="tradingview-widget-container__widget"></div>
+						<div class="tradingview-widget-copyright">
+							<a
+								href="https://www.tradingview.com/symbols/BTCUSD/?exchange=INDEX"
+								rel="noopener"
+								target="_blank"
+								><span class="blue-text">Bitcoin price</span></a
+							>
+							by TradingView
+						</div>
+						<script
+							type="text/javascript"
+							src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+							async
+						>
+							  {
+							  "symbols": [
+							    [
+							      "BTC",
+							      "INDEX:BTCUSD|1D"
+							    ]
+							  ],
+							  "chartOnly": false,
+							  "width": "100%",
+							  "height": "100%",
+							  "locale": "en",
+							  "colorTheme": "light",
+							  "autosize": true,
+							  "showVolume": true,
+							  "showMA": false,
+							  "hideDateRanges": false,
+							  "hideMarketStatus": false,
+							  "hideSymbolLogo": false,
+							  "scalePosition": "right",
+							  "scaleMode": "Normal",
+							  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+							  "fontSize": "10",
+							  "noTimeScale": false,
+							  "valuesTracking": "1",
+							  "changeMode": "price-and-percent",
+							  "chartType": "area",
+							  "gridLineColor": "rgba(26, 26, 26, 0.5)",
+							  "backgroundColor": "rgba(255, 255, 255, 0)",
+							  "lineWidth": 3,
+							  "lineColor": "rgb(123, 39, 202)",
+							  "topColor": "rgba(123, 39, 202,0.3)",
+							  "bottomColor": "rgba(41, 98, 255, 0)"
+							}
+						</script>
+					</div>
+					<!-- TradingView Widget END -->
+				</div>
+			</section>
+
+			<section class="section" id="refferals">
+				<h3 class="tertiary-heading">Refferral Commissions</h3>
+				<p class="paragraph">List of refferals commissions</p>
+
+				<div class="sorting__div">
+					<form action="" class="sorting-form">
+						<div class="sort-input__div date__div start-date">
+							<i class="icon fas fa-calendar-days date-icon"></i>
+							<!-- <label for="date-from">Date from</label> -->
+							<input
+								type="date"
+								name="date-from"
+								id="date-from"
+								class="date input-ele"
+							/>
+						</div>
+
+						<div class="sort-input__div date__div start-date">
+							<i class="icon fas fa-calendar-days date-icon"></i>
+							<!-- <label for="date-from">Date from</label> -->
+							<input
+								type="date"
+								name="date-from"
+								id="date-from"
+								class="date input-ele"
+							/>
+						</div>
+
+						<div class="sort-input__div username__div">
+							<i class="icon fas fa-user"></i>
+
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="Username"
+								class="input-ele"
+							/>
+						</div>
+
+						<div class="sort-input__div level__div">
+							<i class="icon fas fa-1"></i>
+
+							<select name="level" id="level" class="input-ele">
+								<option value="">Level</option>
+								option
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+
+						<div class="commission__div sort-input__div">
+							<i class="icon fas fa-coins"></i>
+							<select
+								name="commission"
+								id="commission"
+								class="input-ele"
+							>
+								<option value="">Commission</option>
+								<option value="">$565 / 0.2BTC</option>
+								<option value="">2</option>
+								<option value="">3</option>
+							</select>
+						</div>
+					</form>
+				</div>
+
+				<div class="downlines__table">
+					<ul class="thead tlist">
+						<li class="t-item tr-date">Date</li>
+						<li class="t-item tr-opt">Operations</li>
+						<li class="t-item tr-username">Username</li>
+						<li class="t-item tr-level">Level</li>
+						<li class="t-item tr-fund">Funded</li>
+						<li class="t-item tr-comm">Commissions</li>
+					</ul>
+
+					<div class="tbody">
+						<ul class="tlist downline">
+							<li class="t-item tr-date">
+								<i class="icon fas fa-calendar-days"></i>
+								<div>
+									<span class="join-date">17 Oct, 2022</span>
+									<span class="join-time">17:00</span>
+								</div>
+							</li>
+							<li class="t-item tr-opt">
+								<span class="commission-status pending">
+									<!-- 
+									pending - yellow
+									live - green
+									ended - purple
+								 -->
+								</span>
+								<span class="t-text">
+									Refferal commission
+								</span>
+							</li>
+							<li class="t-item tr-username">
+								<i class="icon fas fa-user"></i>
+								whitelister
+							</li>
+							<li class="t-item tr-level">
+								<i class="icon fas fa-1"></i>
+								<span class="t-text">Level</span>
+							</li>
+							<li class="t-item tr-fund">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+							<li class="t-item tr-comm">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="tlist downline">
+							<li class="t-item tr-date">
+								<i class="icon fas fa-calendar-days"></i>
+								<div>
+									<span class="join-date">17 Oct, 2022</span>
+									<span class="join-time">17:00</span>
+								</div>
+							</li>
+							<li class="t-item tr-opt">
+								<span class="commission-status pending">
+									<!-- 
+									pending - yellow
+									live - green
+									ended - purple
+								 -->
+								</span>
+								<span class="t-text">
+									Refferal commission
+								</span>
+							</li>
+							<li class="t-item tr-username">
+								<i class="icon fas fa-user"></i>
+								whitelister
+							</li>
+							<li class="t-item tr-level">
+								<i class="icon fas fa-1"></i>
+								<span class="t-text">Level</span>
+							</li>
+							<li class="t-item tr-fund">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+							<li class="t-item tr-comm">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="tlist downline">
+							<li class="t-item tr-date">
+								<i class="icon fas fa-calendar-days"></i>
+								<div>
+									<span class="join-date">17 Oct, 2022</span>
+									<span class="join-time">17:00</span>
+								</div>
+							</li>
+							<li class="t-item tr-opt">
+								<span class="commission-status pending">
+									<!-- 
+									pending - yellow
+									live - green
+									ended - purple
+								 -->
+								</span>
+								<span class="t-text">
+									Refferal commission
+								</span>
+							</li>
+							<li class="t-item tr-username">
+								<i class="icon fas fa-user"></i>
+								whitelister
+							</li>
+							<li class="t-item tr-level">
+								<i class="icon fas fa-1"></i>
+								<span class="t-text">Level</span>
+							</li>
+							<li class="t-item tr-fund">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+							<li class="t-item tr-comm">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="tlist downline">
+							<li class="t-item tr-date">
+								<i class="icon fas fa-calendar-days"></i>
+								<div>
+									<span class="join-date">17 Oct, 2022</span>
+									<span class="join-time">17:00</span>
+								</div>
+							</li>
+							<li class="t-item tr-opt">
+								<span class="commission-status pending">
+									<!-- 
+									pending - yellow
+									live - green
+									ended - purple
+								 -->
+								</span>
+								<span class="t-text">
+									Refferal commission
+								</span>
+							</li>
+							<li class="t-item tr-username">
+								<i class="icon fas fa-user"></i>
+								whitelister
+							</li>
+							<li class="t-item tr-level">
+								<i class="icon fas fa-1"></i>
+								<span class="t-text">Level</span>
+							</li>
+							<li class="t-item tr-fund">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+							<li class="t-item tr-comm">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="tlist downline">
+							<li class="t-item tr-date">
+								<i class="icon fas fa-calendar-days"></i>
+								<div>
+									<span class="join-date">17 Oct, 2022</span>
+									<span class="join-time">17:00</span>
+								</div>
+							</li>
+							<li class="t-item tr-opt">
+								<span class="commission-status pending">
+									<!-- 
+									pending - yellow
+									live - green
+									ended - purple
+								 -->
+								</span>
+								<span class="t-text">
+									Refferal commission
+								</span>
+							</li>
+							<li class="t-item tr-username">
+								<i class="icon fas fa-user"></i>
+								whitelister
+							</li>
+							<li class="t-item tr-level">
+								<i class="icon fas fa-1"></i>
+								<span class="t-text">Level</span>
+							</li>
+							<li class="t-item tr-fund">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+							<li class="t-item tr-comm">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="tlist downline">
+							<li class="t-item tr-date">
+								<i class="icon fas fa-calendar-days"></i>
+								<div>
+									<span class="join-date">17 Oct, 2022</span>
+									<span class="join-time">17:00</span>
+								</div>
+							</li>
+							<li class="t-item tr-opt">
+								<span class="commission-status pending">
+									<!-- 
+									pending - yellow
+									live - green
+									ended - purple
+								 -->
+								</span>
+								<span class="t-text">
+									Refferal commission
+								</span>
+							</li>
+							<li class="t-item tr-username">
+								<i class="icon fas fa-user"></i>
+								whitelister
+							</li>
+							<li class="t-item tr-level">
+								<i class="icon fas fa-1"></i>
+								<span class="t-text">Level</span>
+							</li>
+							<li class="t-item tr-fund">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+							<li class="t-item tr-comm">
+								<i class="icon fas fa-coins"></i>
+								<div>
+									<span>$ 325.65</span>
+									<span>0.019 BTC</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<p class="paragraph table-info">
+					Latest actions (showing 01 to 06 of 259)
+				</p>
+
+				<ul class="pagnation__div">
+					<li class="page prev">
+						<i class="icon fas fa-angle-left"></i>
+					</li>
+					<li class="page current-page">1</li>
+					<li class="page">2</li>
+					<li class="page">3</li>
+					<li class="page">...</li>
+					<li class="page">100</li>
+					<li class="page next">
+						<i class="icon fas fa-angle-right"></i>
+					</li>
+				</ul>
+			</section>
+
+			<button class="msg-btn btn">
+				<i class="icon fas fa-comment"></i>
+			</button>
+		</main>
+
+		<script src="./assets/static/js/menuHandler.js"></script>
+
+		<script
+			src="https://kit.fontawesome.com/806e697d16.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

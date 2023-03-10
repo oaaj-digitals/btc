@@ -1,0 +1,280 @@
+#settings {
+	color: var(--primary-color) !important;
+	border-bottom: 2px solid;
+}
+
+#settings__main {
+	width: 100%;
+	padding: 2rem 10vw;
+
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	align-items: center;
+}
+
+.section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.section:last-child {
+	margin-bottom: 8rem;
+}
+
+.section__main {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.user-img__div {
+	flex-shrink: 0;
+	width: 12vw;
+	height: 12vw;
+
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.user-img {
+	width: 100%;
+	transition: all 0.5s ease;
+}
+
+.user-img:hover {
+	opacity: 0.6;
+}
+
+.form__div {
+	width: 80%;
+}
+
+.column-2 {
+	justify-content: space-between;
+}
+
+.form {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.input__div {
+	width: 45%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.btn__div {
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.img-btn {
+	width: 50%;
+	padding: 1rem 0;
+	border-radius: 1rem;
+}
+
+#change-picture:hover {
+	background-color: var(--primary-color);
+	color: var(--color-white);
+}
+
+#delete-picture:hover {
+	background-color: var(--accent-color-2);
+	color: var(--color-white);
+}
+
+label {
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	order: 1;
+}
+
+.input-ele {
+	order: 2;
+
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	background-color: var(--gray-color-light);
+
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+.input-ele::placeholder {
+	color: transparent;
+}
+
+.input-ele:focus-within {
+	outline: 2px solid var(--primary-color);
+}
+
+.gender__div,
+.new-password__div {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+#gender__label {
+	order: 0;
+	width: 100%;
+}
+
+.gender-btn {
+	width: 45%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.gender__radio-ele {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.gender__radio-ele:checked {
+	background-color: var(--gray-color-dark);
+	opacity: 0.6;
+}
+
+.submit-btn__div {
+	width: 100%;
+}
+
+.submit-btn {
+	font-weight: 700;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	background-color: var(--primary-color);
+	color: var(--color-white);
+}
+
+.submit-btn[disabled] {
+	opacity: 0.5;
+}
+
+.submit-btn:hover {
+	background-color: var(--accent-color-1);
+	color: var(--color-white);
+}
+
+hr {
+	width: 50%;
+	border: none;
+	border-bottom: 2px dashed var(--gray-color-dark);
+}
+
+.new-password__div {
+	width: 100%;
+}
+
+.withdrawal-icon {
+	display: inline-block;
+	height: 50%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(calc(-50% + 1rem));
+	z-index: 1;
+	border-right: 1px solid var(--gray-color-dark);
+	padding: 0 0.5rem;
+}
+
+.withdrawal-input {
+	padding-left: 6rem;
+}
+
+#logout__Section {
+	align-items: flex-end;
+}
+
+.logout-btn {
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	color: var(--color-white);
+	background-color: var(--accent-color-2);
+}
+
+.msg-btn {
+	position: fixed;
+	bottom: 10vh;
+	right: 5vw;
+
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+
+	font-size: 2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--color-white) !important;
+	background-color: var(--primary-color);
+
+	z-index: 1000;
+}
+
+@media (max-width: 830px) {
+	.img-btn {
+		width: max-content;
+		padding: 1rem 2rem;
+		border-radius: 1rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.section__main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.user-img__div {
+		align-self: flex-start;
+		margin-left: 3rem;
+		margin-bottom: 3rem;
+	}
+
+	.form__div {
+		width: 90%;
+	}
+
+	.btn__div {
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.input__div {
+		width: 100%;
+	}
+
+	.msg-btn {
+		bottom: 5vh;
+	}
+}

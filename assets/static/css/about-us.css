@@ -1,0 +1,167 @@
+#about-us {
+	color: var(--primary-color) !important;
+	border-bottom: 2px solid;
+}
+
+#about-us__main {
+	width: 100%;
+	padding: 2rem 5vw;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.section {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+}
+
+.section.box {
+	padding: 3rem;
+	border-radius: 2rem;
+
+	text-align: justify;
+
+	color: var(--color-black);
+	background-color: var(--gray-color-light);
+}
+
+.section:last-child {
+	margin-bottom: 8rem;
+}
+
+#about {
+	width: 55%;
+}
+
+#mission {
+	width: 40%;
+}
+
+#FAQ {
+	width: 100%;
+	margin-top: 5rem;
+}
+
+#FAQ > .secondary-heading {
+	text-align: center;
+}
+
+#FAQ > .container {
+	display: flex;
+	gap: 3rem;
+	align-items: stretch;
+}
+
+.faq-img__div {
+	width: 30%;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.faq-img {
+	width: 70%;
+}
+
+.questions__div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.question {
+	width: 100%;
+}
+
+.details-summary-box {
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	cursor: pointer;
+
+	box-shadow: 2px 2px 5px 2px #00000038;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.details-summary-box::marker {
+	content: "";
+}
+
+.details[open] .details-summary-box {
+	border-top: 3px solid var(--primary-color);
+
+	box-shadow: 2px 2px 2px 2px #00000020;
+}
+
+.drop-down-icon {
+	transition: all 0.1s ease-in;
+}
+
+.details[open] .drop-down-icon {
+	transform: rotate(180deg);
+	color: var(--primary-color);
+}
+
+.details-content-box {
+	width: 100%;
+	padding: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.details-content-box * {
+	width: 80%;
+}
+
+.msg-btn {
+	position: fixed;
+	bottom: 10vh;
+	right: 5vw;
+
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+
+	font-size: 2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--color-white) !important;
+	background-color: var(--primary-color);
+
+	z-index: 1000;
+}
+
+@media (max-width: 830px) {
+	.section {
+		margin-top: 5rem;
+	}
+
+	#about,
+	#mission {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.faq-img__div {
+		display: none;
+	}
+
+	.msg-btn {
+		bottom: 5vh;
+	}
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login | Company Name</title>
+
+		<link
+			rel="stylesheet"
+			href="../assets/static/fonts/fontawesome-free-6.0.0-web/css/all.css"
+		/>
+		<link rel="stylesheet" href="../assets/static/css/style.css" />
+		<link rel="stylesheet" href="../assets/static/css/login-register.css" />
+	</head>
+	<body>
+		<main class="container login-register">
+			<div class="company-logo__div">
+				<a
+					href="../index.html"
+					class="link img__link company-logo__link"
+					><img src="" alt="Company Logo" class="company-logo"
+				/></a>
+			</div>
+			<section class="img__section section">
+				<img
+					src="../assets/images/3d hand with btc.png"
+					alt="3d hand with a coin hovering over it"
+					class="section__img"
+				/>
+			</section>
+
+			<section class="section form__section">
+				<div class="container">
+					<form action="" class="form" id="register-form">
+						<legend class="primary-heading">Create Account</legend>
+
+						<div class="input__div">
+							<input
+								type="text"
+								name="fullname"
+								id="fullname"
+								class="input-ele"
+								placeholder="Full Name"
+							/>
+							<label for="fullname">Full Name</label>
+						</div>
+
+						<div class="input__div">
+							<input
+								type="text"
+								name="email"
+								id="email"
+								class="input-ele"
+								placeholder="Email"
+							/>
+							<label for="email">Email</label>
+						</div>
+
+						<div class="input__div">
+							<input
+								type="text"
+								name="phone-number"
+								id="phone-number"
+								class="input-ele"
+								placeholder="Phone Number"
+							/>
+							<label for="phone-number">Phone Number</label>
+						</div>
+
+						<div class="input__div">
+							<input
+								type="text"
+								name="username"
+								id="username"
+								class="input-ele"
+								placeholder="Username "
+							/>
+							<label for="username">Username</label>
+						</div>
+
+						<div class="input__div">
+							<input
+								type="password"
+								name="password"
+								id="password"
+								class="input-ele"
+								placeholder="password"
+							/>
+							<label for="password">Password</label>
+
+							<div class="show-hide__div">
+								<input
+									type="checkbox"
+									name="show-hide"
+									id="show-hide"
+								/>
+								<i class="icon fas fa-eye-slash"></i>
+								<i class="icon fas fa-eye"></i>
+							</div>
+						</div>
+
+						<div class="input__div">
+							<input
+								type="date"
+								name="DOB"
+								id="Dob"
+								class="input-ele"
+							/>
+							<!-- <label for="username">Date of Birth</label> -->
+						</div>
+
+						<div class="input__div">
+							<input
+								type="text"
+								name="refferal"
+								id="refferal"
+								class="input-ele"
+								placeholder="Refferal code (optional)"
+							/>
+							<label for="refferal"
+								>Refferal code (optional)</label
+							>
+						</div>
+
+						<div class="input__div">
+							<input
+								type="file"
+								name="id-card"
+								id="id-card"
+								class="input-ele"
+								placeholder="ID card upload (Govt. approved)"
+							/>
+							<label for="id-card"
+								>ID card upload (Govt. approved)</label
+							>
+						</div>
+
+						<div class="input__div submit__div">
+							<input
+								type="submit"
+								value="Create Account"
+								class="btn submit-btn"
+							/>
+						</div>
+					</form>
+
+					<div class="hr__div">
+						<hr />
+						<p class="paragraph">or</p>
+						<hr />
+					</div>
+
+					<div class="email-login__div">
+						<a href="#" class="btn google-btn email-btn">
+							<img
+								src="../assets/images/google-icon.png"
+								alt=""
+								class="icon email-icon"
+							/>
+							<span>Continue with Google</span></a
+						>
+						<a href="#" class="btn apple-btn email-btn">
+							<i class="icon email-icon fab fa-apple"></i>
+
+							<span> Continue with Apple </span></a
+						>
+					</div>
+
+					<p class="paragraph signup-paragraph">
+						Already registered?
+						<span
+							><a href="./login.html" class="link signup-link"
+								>Log in</a
+							></span
+						>
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<script>
+			<!-- Script to show and hide the password content -->
+			let checkboxEle = document.getElementById("show-hide");
+
+			checkboxEle.addEventListener("click", () => {
+				let inputEle = document.getElementById("password");
+
+				if (checkboxEle.checked) {
+					inputEle.type = "text";
+				} else {
+					inputEle.type = "password";
+				}
+			});
+		</script>
+
+		<script
+			src="https://kit.fontawesome.com/806e697d16.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

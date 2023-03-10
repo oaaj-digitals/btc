@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Settings | Company Name</title>
+
+		<link
+			rel="stylesheet"
+			href="../assets/static/fonts/fontawesome-free-6.0.0-web/css/all.css"
+		/>
+		<link rel="stylesheet" href="../assets/static/css/style.css" />
+		<link rel="stylesheet" href="../assets/static/css/header.css" />
+		<link rel="stylesheet" href="../assets/static/css/settings.css" />
+	</head>
+	<body>
+		<header>
+			<div class="company-logo__div">
+				<a
+					href="../index.html"
+					class="link img__link company-logo__link"
+					><img
+						src="../assets/images/google-icon.png"
+						alt="Company Logo"
+						class="company-logo"
+				/></a>
+			</div>
+
+			<div class="nav-icon__div closed" id="menu-btn">
+				<i class="icon menu-icon fas fa-bars" id="open-icon"></i>
+				<i class="icon menu-icon fas fa-xmark" id="close-icon"></i>
+			</div>
+
+			<nav class="nav-bar">
+				<ul class="nav-list">
+					<li class="list-item">
+						<a href="../index.html" class="nav-link link" id="home"
+							>Home</a
+						>
+					</li>
+
+					<li class="list-item">
+						<a
+							href="about-us.html"
+							class="nav-link link"
+							id="about-us"
+							>About us</a
+						>
+					</li>
+
+					<li class="list-item">
+						<a
+							href="./contact-us.html"
+							class="nav-link link"
+							id="contact-us"
+							>Contact us</a
+						>
+					</li>
+
+					<li class="list-item">
+						<a
+							href="./settings.html"
+							class="nav-link link"
+							id="settings"
+							>Settings</a
+						>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="login-user__div">
+				<button class="btn funds-btn" id="deposit-btn">
+					<i class="icon fas fa-download"></i>
+					Deposit
+				</button>
+				<button class="btn funds-btn" id="withdraw-btn">
+					<i class="icon fas fa-upload"></i>
+					Withdraw
+				</button>
+
+				<p class="users-name">Robert Fox</p>
+
+				<a href="./settings.html" class="link user-avatar__div">
+					<img
+						src="../assets/images/google-icon.png"
+						alt="Robert Fox"
+						class="avatar"
+					/>
+					<div class="active-identifier"></div>
+				</a>
+			</div>
+		</header>
+
+		<main id="settings__main">
+			<button class="msg-btn btn">
+				<i class="icon fas fa-comment"></i>
+			</button>
+
+			<section class="section" id="account-settings">
+				<h1 class="tertiary-heading section-heading">
+					Account Settings
+				</h1>
+
+				<div class="section__main column-2">
+					<div class="user-img__div">
+						<img
+							src="../assets/images/google-icon.png"
+							alt=""
+							class="user-img"
+						/>
+					</div>
+
+					<div class="form__div">
+						<form action="" class="form" id="acct-settings">
+							<div class="input__div btn__div">
+								<button class="btn img-btn" id="change-picture">
+									Change Picture
+								</button>
+								<button class="btn img-btn" id="delete-picture">
+									Delete Picture
+								</button>
+							</div>
+
+							<div class="input__div">
+								<input
+									type="file"
+									name="id-card"
+									id="id-card"
+									class="input-ele"
+									placeholder="ID card upload (Govt. approved)"
+								/>
+								<label for="id-card"
+									>ID card upload (Govt. approved)</label
+								>
+							</div>
+
+							<div class="input__div">
+								<input
+									type="text"
+									name="fullname"
+									id="fullname"
+									class="input-ele"
+									placeholder="Full Name"
+								/>
+								<label for="fullname">Full Name</label>
+							</div>
+
+							<div class="input__div">
+								<input
+									type="text"
+									name="email"
+									id="email"
+									class="input-ele"
+									placeholder="Email"
+								/>
+								<label for="email">Email</label>
+							</div>
+
+							<div class="input__div">
+								<input
+									type="text"
+									name="phone-number"
+									id="phone-number"
+									class="input-ele"
+									placeholder="Phone Number"
+								/>
+								<label for="phone-number">Phone Number</label>
+							</div>
+
+							<div class="input__div">
+								<input
+									type="text"
+									name="username"
+									id="username"
+									class="input-ele"
+									placeholder="Username "
+								/>
+								<label for="username">Username</label>
+							</div>
+
+							<div class="input__div">
+								<input
+									type="date"
+									name="DOB"
+									id="Dob"
+									class="input-ele"
+								/>
+								<label for="username">Date of Birth</label>
+							</div>
+
+							<div class="input__div gender__div column-2">
+								<label for="gender" id="gender__label"
+									>Gender</label
+								>
+								<div class="gender-btn btn">
+									<label for="gender-male">Male</label>
+									<input
+										type="radio"
+										name="gender"
+										id="gender-male"
+										class="gender__radio-ele"
+										checked
+									/>
+								</div>
+								<div class="gender-btn btn">
+									<label for="gender-female">Female</label>
+									<input
+										type="radio"
+										name="gender"
+										id="gender-female"
+										class="gender__radio-ele"
+									/>
+								</div>
+							</div>
+
+							<div class="submit-btn__div">
+								<input
+									type="submit"
+									value="Save Changes"
+									class="btn submit-btn"
+								/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<hr />
+
+			<section class="section" id="lang-settings">
+				<h1 class="tertiary-heading section-heading">
+					Language Settings
+				</h1>
+
+				<div class="section__main">
+					<div class="form__div">
+						<form action="" class="form" id="lang-settings">
+							<div class="input__div">
+								<select
+									type="text"
+									name="lang"
+									id="lang"
+									class="input-ele"
+									placeholder="Language"
+								>
+									<option value="">Language</option>
+									<option value="">Language</option>
+									<option value="">Language</option>
+									<option value="">Language</option>
+									<option value="">Language</option>
+									<option value="">Language</option>
+									<option value="">Language</option>
+								</select>
+								<label for="lang">Langugae</label>
+							</div>
+
+							<div class="submit-btn__div">
+								<input
+									type="submit"
+									value="Save Changes"
+									class="btn submit-btn"
+								/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<hr />
+
+			<section class="section" id="password-settings">
+				<h1 class="tertiary-heading section-heading">
+					Password Settings
+				</h1>
+
+				<div class="section__main">
+					<div class="form__div">
+						<form action="" class="form" id="password-settings">
+							<div class="input__div">
+								<input
+									type="password"
+									name="old-password"
+									id="old-password"
+									class="input-ele"
+									placeholder="Old Password"
+								/>
+								<label for="lang">Old Password</label>
+							</div>
+
+							<div class="column-2 new-password__div">
+								<div class="input__div">
+									<input
+										type="password"
+										name="new-password"
+										id="new-password"
+										class="input-ele"
+										placeholder="New Password"
+									/>
+									<label for="lang">New Password</label>
+								</div>
+								<div class="input__div">
+									<input
+										type="password"
+										name="confirm-new-password"
+										id="confirm-new-password"
+										class="input-ele"
+										placeholder="Confirm New Password"
+									/>
+									<label for="lang"
+										>Confirm New Password</label
+									>
+								</div>
+							</div>
+
+							<div class="submit-btn__div">
+								<input
+									type="submit"
+									value="Save Changes"
+									id="password-subit-btn"
+									class="btn submit-btn"
+									disabled
+								/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<hr />
+
+			<section class="section" id="withdrawal-settings">
+				<h1 class="tertiary-heading section-heading">
+					Withdrawal Settings
+				</h1>
+
+				<div class="section__main">
+					<div class="form__div">
+						<form action="" class="form" id="withdrawal-settings">
+							<div class="input__div">
+								<img
+									src="../assets/images/green-dollar-sign.png"
+									alt=""
+									class="icon withdrawal-icon"
+								/>
+								<select
+									type="text"
+									name="withdraw-from"
+									id="withdraw-from"
+									class="withdrawal-input input-ele"
+									placeholder="From"
+								>
+									<option value="">$ 6,900,000</option>
+									<option value="">$ 6,900,000</option>
+									<option value="">$ 6,900,000</option>
+									<option value="">$ 6,900,000</option>
+								</select>
+								<label for="withdraw-from">From</label>
+							</div>
+
+							<div class="input__div">
+								<img
+									src="../assets/images/mc_symbol.svg"
+									alt=""
+									class="icon withdrawal-icon"
+								/>
+								<input
+									type="text"
+									name="withdraw-to"
+									id="withdraw-to"
+									class="withdrawal-input input-ele"
+									placeholder="TO"
+								/>
+								<label for="withdraw-to">To</label>
+							</div>
+
+							<div class="input__div">
+								<input
+									type="text"
+									name="withdrawal-amt"
+									id="withdrawal-amt"
+									class="input-ele"
+									placeholder="Full Name"
+								/>
+								<label for="withdrawal-amt">Amount</label>
+							</div>
+
+							<div class="submit-btn__div">
+								<input
+									type="submit"
+									value="Withdraw"
+									class="btn submit-btn"
+								/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="logout__Section">
+				<button class="btn logout-btn">Log out</button>
+			</section>
+		</main>
+
+		<script>
+			let newPassword = document.getElementById("new-password");
+			let confirmNewPassword = document.getElementById(
+				"confirm-new-password"
+			);
+			let submitBtn = document.getElementById("password-subit-btn");
+
+			console.log(submitBtn);
+
+			newPassword.addEventListener("change", () => {
+				validatePassword(newPassword, confirmNewPassword);
+			});
+
+			confirmNewPassword.addEventListener("change", () => {
+				validatePassword(newPassword, confirmNewPassword);
+			});
+
+			let validatePassword = (newPass, confirmPass) => {
+				if (newPass.value === confirmPass.value) {
+					submitBtn.disabled = false;
+					console.log(submitBtn);
+				}
+			};
+		</script>
+		<script src="../assets/static/js/menuHandler.js"></script>
+		<script
+			src="https://kit.fontawesome.com/806e697d16.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

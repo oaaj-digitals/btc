@@ -1,0 +1,703 @@
+#home {
+	color: var(--primary-color) !important;
+	border-bottom: 2px solid;
+}
+
+#home__main {
+	width: 100%;
+	padding: 2rem 5vw;
+	margin-bottom: 15vh;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4rem;
+	align-items: center;
+}
+
+.section {
+	display: flex;
+	padding: 3rem;
+	border-radius: 2rem;
+
+	background-color: var(--gray-color-light);
+}
+
+#acct-info {
+	width: 65%;
+
+	justify-content: space-between;
+	gap: 3rem;
+	align-items: stretch;
+	align-self: stretch;
+}
+
+.balance__div {
+	height: 100%;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.current-bal {
+	font-size: 2.5rem;
+}
+
+.current-bal .percentage-change {
+	font-size: 0.7em;
+	color: var(--accent-color-1);
+
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+
+	position: absolute;
+	left: 14em;
+	top: 5px;
+}
+
+.heading {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.value {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.chart {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.monthly-profit .percentage-change {
+	font-size: 0.7em;
+	color: var(--accent-color-1);
+	background-color: var(--color-black);
+
+	padding: 2px 5px;
+	border-radius: 5px;
+
+	width: max-content;
+	display: flex;
+	gap: 0.5rem;
+
+	position: absolute;
+	left: 14em;
+	top: 0;
+}
+
+#investmentProgressChart {
+	background-color: transparent !important;
+}
+
+#transactions {
+	flex-direction: column;
+	gap: 1rem;
+	width: 30%;
+	height: 40vh;
+}
+
+#transactions .tertiary-heading {
+	flex-shrink: 0;
+}
+
+.transaction-list {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+
+	overflow-y: scroll;
+}
+
+.transaction-list::-webkit-scrollbar {
+	width: 2px;
+}
+
+.transaction-list::-webkit-scrollbar-thumb {
+	background-color: rgb(63, 63, 63);
+	border-radius: 5px;
+}
+
+.list-item {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.transaction {
+	height: 3rem;
+}
+
+.token {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.transaction-type {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.receive-icon {
+	color: var(--accent-color-1);
+}
+
+.send-icon {
+	color: var(--accent-color-2);
+}
+
+#exchange {
+	width: 25%;
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+}
+
+#exchange .container {
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.exchange-route {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.exchange-route .currency {
+	font-size: 0.7em;
+}
+
+.exchange-form {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.input__div {
+	display: inline-block;
+	width: 100%;
+	color: var(--color-black);
+
+	transition: all 0.2s ease;
+}
+
+.input-ele {
+	width: 100%;
+	display: inline-block;
+	padding: 1rem;
+	padding-right: 6rem;
+
+	border: none;
+	border-bottom: 1px solid var(--gray-color-light);
+	background-color: var(--color-white);
+	opacity: 0.7;
+
+	z-index: 10;
+	transition: all 0.2s ease;
+
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+.input-ele::-webkit-outer-spin-button,
+.input-ele::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.input-ele::placeholder {
+	color: transparent !important;
+}
+
+.input-ele:focus-within {
+	outline: none;
+	border-bottom: 2px solid var(--color-black);
+}
+
+.input__div label {
+	position: absolute;
+	left: 1rem;
+	bottom: 0.5rem;
+	transition: all 0.2s ease;
+}
+
+.input-ele:not(:placeholder-shown) ~ label,
+.input-ele:focus-within ~ label {
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	color: var(--color-black);
+
+	top: -1.8rem;
+	left: 0;
+}
+
+.exchange-currency__img {
+	height: 80%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 1rem;
+	border-left: 1px solid var(--gray-color-dark);
+	z-index: 20;
+}
+
+.submit__div {
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.exchange-form .submit-btn {
+	width: 60%;
+	font-weight: 700;
+	padding: 1rem;
+	border-radius: 1rem;
+	color: var(--color-white);
+	background-color: var(--primary-color);
+}
+
+.refresh-btn {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+
+	border-radius: 100%;
+	color: var(--color-black);
+	background-color: transparent;
+}
+
+.refresh-btn:hover {
+	box-shadow: none;
+}
+
+#overall-growth {
+	width: 70%;
+	height: 60vh;
+	flex-direction: column;
+}
+
+.overall-growth {
+	width: 100%;
+	height: 100%;
+}
+
+#refferals {
+	width: 100%;
+	/* height: 80vh; */
+	flex-direction: column;
+}
+
+.sorting-form {
+	margin-top: 1rem;
+	width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.sort-input__div {
+	width: max-content;
+	height: 3rem;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding-left: 1rem;
+	border-radius: 3rem;
+	border: 2px solid var(--primary-color);
+	overflow: hidden;
+}
+
+.sort-input__div .input-ele {
+	flex-shrink: 0;
+	width: 10rem;
+	height: 100%;
+	padding: 0;
+
+	border: none;
+	background-color: transparent;
+
+	color: var(--color-black) !important;
+	z-index: 0;
+	transition: all 0.2s ease;
+}
+
+.sorting-form .icon {
+	color: var(--primary-color);
+	padding-right: 0.5rem;
+	border-right: 1px solid var(--gray-color-dark);
+}
+
+#username,
+#level {
+	padding-left: 0.5rem;
+}
+
+#level {
+	width: 8rem;
+}
+
+.date__div {
+	padding: 0 2rem;
+}
+
+.date__div .icon {
+	color: var(--primary-color);
+	padding-right: 0.5rem;
+	border-left: 1px solid var(--gray-color-dark);
+
+	display: none;
+}
+
+.commission__div #commission {
+	width: max-content;
+	text-align: center;
+	padding: 0 1rem;
+	color: var(--accent-color-1) !important;
+}
+
+.level__div > .icon,
+.tr-level > .icon {
+	font-size: 0.7em;
+	width: 1.6em;
+	height: 1.6em;
+	padding: 0;
+	border-radius: 100%;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-white) !important;
+	background-color: var(--primary-color);
+}
+
+.downlines__table {
+	width: 100%;
+
+	text-align: left;
+	color: var(--color-black) !important;
+}
+
+.thead,
+.tbody,
+.downline {
+	width: 100%;
+	display: flex;
+
+	list-style: none;
+}
+
+.thead,
+.tbody {
+	margin-top: 2rem;
+}
+
+.thead {
+	font-weight: 700;
+}
+
+.tbody {
+	gap: 1rem;
+	flex-direction: column;
+}
+
+.tlist {
+	width: 100%;
+	padding-left: 3rem !important;
+	padding-right: 3rem !important;
+	gap: 3rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.downline {
+	padding: 1rem 0;
+	border-radius: 1rem;
+
+	background-color: var(--gray-color-dark);
+}
+
+.t-item {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.t-item > div {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.7em;
+	line-height: 1;
+}
+
+.t-item > .icon {
+	color: var(--primary-color);
+}
+
+.tr-date,
+.tr-fund,
+.tr-comm,
+.tr-level {
+	width: 10%;
+	flex-shrink: 0;
+}
+
+.tbody .tr-fund,
+.tbody .tr-fund .icon {
+	color: var(--accent-color-2) !important;
+}
+
+.tbody .tr-comm,
+.tbody .tr-comm .icon {
+	color: var(--accent-color-1);
+}
+
+.commission-status {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+}
+
+.pending {
+	background-color: var(--accent-color-3);
+}
+.live {
+	background-color: var(--accent-color-1);
+}
+.ended {
+	background-color: var(--primary-color);
+}
+
+.table-info {
+	text-align: right;
+	margin-top: 0.5rem;
+}
+
+.pagnation__div {
+	margin-top: 2rem;
+	display: flex;
+	align-self: center;
+	gap: 3rem;
+}
+
+.pagnation__div .page {
+	width: 3rem;
+	height: 3rem;
+	border: 2px solid var(--primary-color);
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+	line-height: 0;
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.pagnation__div .page:hover,
+.current-page {
+	color: var(--color-white) !important;
+	background-color: var(--primary-color);
+}
+
+.msg-btn {
+	position: fixed;
+	bottom: 10vh;
+	right: 3vw;
+
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+
+	font-size: 2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--color-white) !important;
+	background-color: var(--primary-color);
+
+	z-index: 1000;
+}
+
+@media (max-width: 1100px) {
+	#overall-growth {
+		height: 70vh;
+	}
+}
+
+@media (max-width: 930px) {
+	#home__main {
+		justify-content: space-between;
+	}
+
+	#acct-info {
+		width: 100%;
+	}
+
+	#transactions,
+	#exchange {
+		width: 45%;
+	}
+
+	#overall-growth {
+		width: 100%;
+		height: 80vh;
+	}
+
+	.refresh-btn {
+		top: 0rem;
+	}
+}
+
+@media (max-width: 830px) {
+	.current-bal .percentage-change {
+		left: 11em;
+	}
+
+	.sort-input__div .date {
+		width: 14rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.current-bal {
+		font-size: 2rem;
+	}
+
+	.sorting-form {
+		margin-top: 2rem;
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	#acct-info {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.investment-progress,
+	#acct-info hr {
+		display: none;
+	}
+
+	.balance__div {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.current-bal .percentage-change,
+	.monthly-profit .percentage-change {
+		left: 12em;
+	}
+
+	#transactions,
+	#exchange {
+		height: 40vh;
+	}
+
+	.exchange-route {
+		font-size: 1.3rem;
+	}
+
+	.exchange-form .submit-btn {
+		width: max-content;
+	}
+
+	.type-text,
+	.t-text {
+		display: none;
+	}
+
+	.refresh-btn {
+		top: -0.5rem;
+	}
+
+	.tr-date {
+		width: 6%;
+	}
+
+	.tr-username {
+		width: 6%;
+	}
+
+	.tr-opt,
+	.tr-fund,
+	.tr-comm {
+		width: 5%;
+		flex-grow: 0;
+		text-overflow: ellipsis;
+	}
+
+	.t-item {
+		flex-shrink: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.msg-btn {
+		bottom: 5vh;
+	}
+
+	.pagnation__div {
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.current-bal,
+	.monthly-profit {
+		font-size: 1.6rem;
+	}
+
+	#transactions,
+	#exchange {
+		width: 100%;
+	}
+
+	#acct-info {
+		padding: 1.5rem 2rem;
+		order: -3;
+	}
+
+	#exchange {
+		order: -2;
+	}
+
+	.thead.tlist {
+		padding: 0 !important;
+		font-size: 1.4rem;
+	}
+
+	.pagnation__div {
+		gap: 1.5rem;
+	}
+}

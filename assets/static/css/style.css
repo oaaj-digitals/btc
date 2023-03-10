@@ -1,0 +1,137 @@
+@font-face {
+	font-family: Ubuntu_Mono;
+	src: url("../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf");
+}
+
+:root {
+	--default-font-size: 1.6rem;
+
+	--primary-color: #7b27ca;
+
+	--accent-color-1: #089981;
+	--accent-color-1-light: #88c49c;
+	--accent-color-2: #ff4d39;
+	--accent-color-3: #ffb900;
+
+	--gray-color-light: #d6d6d6;
+	--gray-color-dark: #bbbbbb;
+
+	--color-white: #fefefe;
+	--color-black: #111111;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Ubuntu_Mono, Lato, sans-serif;
+	font-size: var(--default-font-size);
+	font-weight: 400;
+	line-height: 1.7;
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.container {
+	display: inline-block;
+	width: 100%;
+}
+
+.primary-heading {
+	font-size: 3.5rem;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	backface-visibility: hidden;
+}
+
+.secondary-heading {
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	color: var(--primary-color);
+}
+
+.tertiary-heading {
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-transform: capitalize;
+}
+
+.link,
+.link:link,
+.link:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--accent-color-1);
+}
+
+.link:hover,
+.link:active {
+	text-decoration: underline;
+	color: var(--primary-color);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.1s ease;
+}
+
+.btn:hover,
+.btn:active {
+	box-shadow: 2px 2px 5px 2px #00000038;
+}
+
+img {
+	display: inline-block;
+}
+
+@media (max-width: 1100px) {
+	html {
+		font-size: 55%;
+	}
+}
+
+@media (max-width: 930px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media (max-width: 830px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media (max-width: 700px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media (max-width: 600px) {
+	html {
+		font-size: 45%;
+	}
+}
